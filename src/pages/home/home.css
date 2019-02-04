@@ -1,0 +1,9 @@
+#home-title {
+    margin-top: 90px;
+    color: white;
+}
+
+#info-cards {
+    display: inline;
+    border: solid white 2px;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MenuBar from './components/nav-bar/nav-bar';
 import Home from './pages/home/home';
+import About from './pages/about/about';
 
 class App extends Component {
   constructor() {
@@ -16,7 +17,7 @@ class App extends Component {
         tab = <Home/>;
         break;
       case "about":
-        tab = <div>about</div>;
+        tab = <About/>;
         break;
       case "contact":
         tab = <div>contact</div>;
@@ -29,7 +30,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App bg">
         <MenuBar itemSelected={(category) => {this.setState({tab: category})}}/>
         {this.renderTab()}
       </div>

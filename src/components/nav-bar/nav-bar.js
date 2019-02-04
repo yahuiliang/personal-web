@@ -1,5 +1,4 @@
 import React from 'react';
-import './nav-bar.css';
 
 class MenuBar extends React.Component {
   render() {
@@ -25,7 +24,11 @@ class MenuBar extends React.Component {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href={"#Home"} onClick={() => {
+                <a className="nav-link"
+                   href={"#Home"}
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse.show"
+                   onClick={() => {
                   this.props.itemSelected("home")
                 }}>
                   Home
@@ -33,7 +36,10 @@ class MenuBar extends React.Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href={"#About"}
+                <a className="nav-link"
+                   href={"#About"}
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse.show"
                    onClick={() => {
                      this.props.itemSelected("about")
                    }}>
@@ -43,6 +49,8 @@ class MenuBar extends React.Component {
               <li className="nav-item">
                 <a className="nav-link"
                    href={"#Projects"}
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse.show"
                    onClick={() => {
                      this.props.itemSelected("contact")
                    }}>
