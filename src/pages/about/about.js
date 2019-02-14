@@ -2,14 +2,9 @@ import React from 'react';
 import './about.css';
 
 class About extends React.Component {
-  constructor() {
-    super();
-    this.state = {textValue: ""};
-  }
-
   render() {
     return (
-      <div className={"tmp"}>
+      <div id={"about"}>
         <img src={require("../../materials/DSC07303.png")} alt="nothing" className="img-thumbnail"/>
         <p>
           I am in my third year of studies towards a bachelor's in Software Engineering and Computer Engineering. I love
