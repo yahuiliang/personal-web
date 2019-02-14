@@ -1,16 +1,18 @@
 import React from 'react';
-import './home.css';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
         {/*This is the welcome message*/}
-        <h1 id={"home-title"}>Welcome to Yahui's<br/>personal website</h1>
+        <h1 style={{marginTop: 90, marginBottom: 90}}>
+          Hello World!<br/>
+          YAHUI is waiting for you
+        </h1>
         {/*Here are cards for different categories*/}
         <div className="container">
           <div className="row">
-            <div className="card col-sm" style={{width: "10rem"}}>
+            <div className="card col-sm mx-auto" style={{width: "15rem"}}>
               <img className="card-img-top" src={require("../../materials/DSC07303.png")} alt="Card cap"/>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
@@ -20,7 +22,7 @@ class Home extends React.Component {
               </div>
             </div>
 
-            <div className="card col-sm" style={{width: "10rem"}}>
+            <div className="card col-sm mx-auto" style={{width: "15rem"}}>
               <img className="card-img-top" src={require("../../materials/DSC07303.png")} alt="Card cap"/>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
@@ -30,7 +32,7 @@ class Home extends React.Component {
               </div>
             </div>
 
-            <div className="card col-sm" style={{width: "10rem"}}>
+            <div className="card col-sm mx-auto" style={{width: "15rem"}}>
               <img className="card-img-top" src={require("../../materials/DSC07303.png")} alt="Card cap"/>
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>

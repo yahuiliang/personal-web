@@ -52,9 +52,20 @@ class MenuBar extends React.Component {
                    data-toggle="collapse"
                    data-target=".navbar-collapse.show"
                    onClick={() => {
-                     this.props.itemSelected("contact")
+                     this.props.itemSelected("projects")
                    }}>
                   Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link"
+                   href={"#Contact"}
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse.show"
+                   onClick={() => {
+                     this.props.itemSelected("contact")
+                   }}>
+                  Contact
                 </a>
               </li>
             </ul>

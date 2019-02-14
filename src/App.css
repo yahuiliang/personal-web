@@ -3,11 +3,11 @@ html, body, #root, .App {
   height: 100%;
 }
 
-.bg {
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background: url("https://wpmisc.com/sites/default/files/wallpaper/space/73159/dark-space-hd-wallpapers-73159-7854063.png") no-repeat center;
-  background-size: cover;
-  overflow-y: auto;
-}
+/*.bg {*/
+  /*!* Full height *!*/
+  /*height: 100%;*/
+  /*!* Center and scale the image nicely *!*/
+  /*background: url("https://wpmisc.com/sites/default/files/wallpaper/space/73159/dark-space-hd-wallpapers-73159-7854063.png") no-repeat center;*/
+  /*background-size: cover;*/
+  /*overflow-y: auto;*/
+/*}*/

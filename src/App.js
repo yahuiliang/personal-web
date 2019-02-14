@@ -3,6 +3,9 @@ import './App.css';
 import MenuBar from './components/nav-bar/nav-bar';
 import Home from './pages/home/home';
 import About from './pages/about/about';
+import Footer from "./components/footer/footer";
+import Projects from "./pages/projects/projects";
+import Contact from "./pages/contact/contact";
 
 class App extends Component {
   constructor() {
@@ -19,8 +22,11 @@ class App extends Component {
       case "about":
         tab = <About/>;
         break;
+      case "projects":
+        tab = <Projects/>;
+        break;
       case "contact":
-        tab = <div>contact</div>;
+        tab = <Contact/>;
         break;
       default:
         break;
@@ -33,6 +39,7 @@ class App extends Component {
       <div className="App bg">
         <MenuBar itemSelected={(category) => {this.setState({tab: category})}}/>
         {this.renderTab()}
+        <Footer/>
       </div>
     );
   }
