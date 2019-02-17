@@ -3,6 +3,12 @@ html, body, #root, .App {
   height: 100%;
 }
 
+#content {
+  overflow-y: scroll;
+  top: 100px;
+  border: solid red 3px;
+}
+
 /*.bg {*/
   /*!* Full height *!*/
   /*height: 100%;*/

@@ -1,14 +1,19 @@
 import React from 'react';
+import "./nav-bar.css";
 
-class MenuBar extends React.Component {
+class NavBar extends React.Component {
   render() {
+    let homeActive = "Home" === this.props.active ? " active" : "";
+    let aboutActive = "About" === this.props.active ? " active" : "";
+    let projectsActive = "Projects" === this.props.active ? " active" : "";
+    let contactActive = "Contact" === this.props.active ? " active" : "";
     return (
-      <div>
+      <div id="nav-bar" href="Top">
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
           <a className="navbar-brand mb-0 h1"
              href={"#Home"}
              onClick={() => {
-               this.props.itemSelected("home")
+               this.props.itemSelected("Home")
              }}>
             Yahui.com
           </a>
@@ -23,47 +28,47 @@ class MenuBar extends React.Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
+              <li className={"nav-item" + homeActive}>
                 <a className="nav-link"
                    href={"#Home"}
                    data-toggle="collapse"
                    data-target=".navbar-collapse.show"
                    onClick={() => {
-                  this.props.itemSelected("home")
-                }}>
+                     this.props.itemSelected("Home")
+                   }}>
                   Home
                   <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className={"nav-item" + aboutActive}>
                 <a className="nav-link"
                    href={"#About"}
                    data-toggle="collapse"
                    data-target=".navbar-collapse.show"
                    onClick={() => {
-                     this.props.itemSelected("about")
+                     this.props.itemSelected("About")
                    }}>
                   About
                 </a>
               </li>
-              <li className="nav-item">
+              <li className={"nav-item" + projectsActive}>
                 <a className="nav-link"
                    href={"#Projects"}
                    data-toggle="collapse"
                    data-target=".navbar-collapse.show"
                    onClick={() => {
-                     this.props.itemSelected("projects")
+                     this.props.itemSelected("Projects")
                    }}>
                   Projects
                 </a>
               </li>
-              <li className="nav-item">
+              <li className={"nav-item" + contactActive}>
                 <a className="nav-link"
                    href={"#Contact"}
                    data-toggle="collapse"
                    data-target=".navbar-collapse.show"
                    onClick={() => {
-                     this.props.itemSelected("contact")
+                     this.props.itemSelected("Contact")
                    }}>
                   Contact
                 </a>
@@ -76,4 +81,4 @@ class MenuBar extends React.Component {
   }
 }
 
-export default MenuBar;
+export default NavBar;

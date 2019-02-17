@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import MenuBar from './components/nav-bar/nav-bar';
+import NavBar from './components/nav-bar/nav-bar';
 import Home from './pages/home/home';
 import About from './pages/about/about';
 import Footer from "./components/footer/footer";
@@ -10,25 +10,25 @@ import Contact from "./pages/contact/contact";
 class App extends Component {
   constructor() {
     super();
-    this.state = {tab: "home"}
+    this.state = { tab: "Home" }
   }
 
   renderTab() {
     let tab = undefined;
     switch (this.state.tab) {
-      case "home":
+      case "Home":
         tab = <Home start={() => {
-          this.setState({tab: "about"});
-        }}/>;
+          this.setState({ tab: "About" });
+        }} />;
         break;
-      case "about":
-        tab = <About/>;
+      case "About":
+        tab = <About />;
         break;
-      case "projects":
-        tab = <Projects/>;
+      case "Projects":
+        tab = <Projects />;
         break;
-      case "contact":
-        tab = <Contact/>;
+      case "Contact":
+        tab = <Contact />;
         break;
       default:
         break;
@@ -39,9 +39,11 @@ class App extends Component {
   render() {
     return (
       <div className="App bg">
-        <MenuBar itemSelected={(category) => {this.setState({tab: category})}}/>
-        {this.renderTab()}
-        <Footer/>
+        <NavBar active={this.state.tab} itemSelected={(category) => { this.setState({ tab: category }) }} />
+        <div id="content">
+          {this.renderTab()}
+        </div>
+        <Footer />
       </div>
     );
   }
