@@ -6,14 +6,8 @@ html, body, #root, .App {
 #content {
   overflow-y: scroll;
   top: 100px;
-  border: solid red 3px;
 }
 
-/*.bg {*/
-  /*!* Full height *!*/
-  /*height: 100%;*/
-  /*!* Center and scale the image nicely *!*/
-  /*background: url("https://wpmisc.com/sites/default/files/wallpaper/space/73159/dark-space-hd-wallpapers-73159-7854063.png") no-repeat center;*/
-  /*background-size: cover;*/
-  /*overflow-y: auto;*/
-/*}*/
+#nav-placeholder {
+  height: 55px;
+}

@@ -3,9 +3,9 @@ import './App.css';
 import NavBar from './components/nav-bar/nav-bar';
 import Home from './pages/home/home';
 import About from './pages/about/about';
-import Footer from "./components/footer/footer";
-import Projects from "./pages/projects/projects";
-import Contact from "./pages/contact/contact";
+import Footer from './components/footer/footer';
+import Projects from './pages/projects/projects';
+import Contact from './pages/contact/contact';
 
 class App extends Component {
   constructor() {
@@ -40,6 +40,7 @@ class App extends Component {
     return (
       <div className="App bg">
         <NavBar active={this.state.tab} itemSelected={(category) => { this.setState({ tab: category }) }} />
+        <div id="nav-placeholder" />
         <div id="content">
           {this.renderTab()}
         </div>

@@ -6,7 +6,7 @@ class Home extends React.Component {
     return (
       <div id={"home"}>
         {/*This is the welcome message*/}
-        <h1 style={{marginTop: 90, marginBottom: 90}}>
+        {/* <h1 style={{marginTop: 90, marginBottom: 90}}>
           Hello World!<br/>
           YAHUI is waiting for you!
         </h1>
@@ -17,7 +17,7 @@ class Home extends React.Component {
           }}>
             Start the trip
           </button>
-        </div>
+        </div> */}
       </div>
     );
   }
