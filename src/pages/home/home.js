@@ -6,9 +6,18 @@ class Home extends React.Component {
     return (
       <div id={"home"}>
         <div id="container">
-          <h1>
-            Yahui Liang
-          </h1>
+          <div id="border">
+            <div>
+              <h1>
+                Yahui Liang
+              </h1>
+              <button onClick={() => {
+                this.props.learnMore();
+              }}>
+                Learn More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -1,4 +1,8 @@
-#about img {
-    height: 300px;
-    width: auto;
+#about {
+    width: 100%;
+    height: 100%;
+}
+
+#about #id-card-placeholder {
+    height: 400px;
 }

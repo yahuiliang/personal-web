@@ -3,14 +3,21 @@
     height: 100%;
 }
 
-#home div {
-    margin-top: 20px;
-}
-
 #home #container {
+    margin-top: 20px;
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 35%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+#home #border {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    margin: 0 auto;
+    border: dotted gray 10px;
 }

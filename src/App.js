@@ -17,7 +17,7 @@ class App extends Component {
     let tab = undefined;
     switch (this.state.tab) {
       case "Home":
-        tab = <Home start={() => {
+        tab = <Home learnMore={() => {
           this.setState({ tab: "About" });
         }} />;
         break;
