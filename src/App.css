@@ -4,6 +4,7 @@ html, body, #root, .App {
 }
 
 #content {
+  height: calc(100% - 105px);
   top: 100px;
 }
 
