@@ -1,4 +1,19 @@
-#home img {
-    width: 400px;
-    height: auto;
+#home {
+    position: absolute;
+    /* border: red solid 3px; */
+    height: calc(100% - 105px);
+    width: 100%;
+}
+
+#home div {
+    margin-top: 20px;
+    /* border: blue solid 3px; */
+}
+
+#home #container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

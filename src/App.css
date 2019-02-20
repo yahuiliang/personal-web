@@ -4,7 +4,6 @@ html, body, #root, .App {
 }
 
 #content {
-  overflow-y: scroll;
   top: 100px;
 }
 

@@ -11,8 +11,8 @@ class Footer extends React.Component {
             &copy; Yahui Liang Website 2019
           </div>
           <div id="external-links">
-            <a href="https://www.linkedin.com/in/yahui-liang/" class="fa fa-linkedin fa-lg"></a>
-            <a href="https://github.com/yahuiliang" class="fa fa-github fa-lg"></a>
+            <a href="https://www.linkedin.com/in/yahui-liang/" class="fa fa-linkedin fa-lg" />
+            <a href="https://github.com/yahuiliang" class="fa fa-github fa-lg" />
           </div>
         </div>
       </footer>
