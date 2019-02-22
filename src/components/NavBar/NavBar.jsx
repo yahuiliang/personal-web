@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
 import "antd/dist/antd.css";
-import './NavBar.css';
 import Logo from './Logo/Logo.jsx';
 import { Row, Col } from 'antd';
 
@@ -15,21 +14,19 @@ class NavBar extends Component {
           </Col>
           <Col span={12}>
             <Row type="flex" justify="end">
-              <div>
-                <Col span={24}>
-                  <Menu style={{background: "transparent"}} className="menu" mode="horizontal">
-                    <Menu.Item>
-                      Home
-                    </Menu.Item>
-                    <Menu.Item>
-                      About
-                    </Menu.Item>
-                    <Menu.Item>
-                      Contact
-                    </Menu.Item>
-                  </Menu>
-                </Col>
-              </div>
+              <Col>
+                <Menu style={{background: "transparent" }} className="menu" mode="horizontal">
+                  <Menu.Item>
+                    Home
+                  </Menu.Item>
+                  <Menu.Item>
+                    About
+                  </Menu.Item>
+                  <Menu.Item>
+                    Contact
+                  </Menu.Item>
+                </Menu>
+              </Col>
             </Row>
           </Col>
         </Row>

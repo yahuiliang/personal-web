@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 class App extends Component {
   constructor() {
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
+        <Footer />
       </div>
     );
   }
