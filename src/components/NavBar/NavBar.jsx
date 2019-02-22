@@ -17,7 +17,7 @@ class NavBar extends Component {
             <Row type="flex" justify="end">
               <div>
                 <Col span={24}>
-                  <Menu className="menu" mode="horizontal">
+                  <Menu style={{background: "transparent"}} className="menu" mode="horizontal">
                     <Menu.Item>
                       Home
                     </Menu.Item>
