@@ -5,7 +5,7 @@ import './HelloMsg.css';
 class HelloMsg extends Component {
   render() {
     return (
-      <div id="hello-msg" height="300" width="100">
+      <div id="hello-msg" style={this.props.style}>
         <h5 id="job">I am a software engineer,</h5>
         <h1 id="name">
           <b>Yahui Liang</b>

@@ -7,20 +7,17 @@ import { Row, Col } from 'antd';
 class NavBar extends Component {
   render() {
     return (
-      <nav id="nav-bar">
+      <nav id="nav-bar" style={this.props.style}>
         <Row>
-          <Col span={12}>
-            <Logo className="logo" />
+          <Col offset={1} span={11}>
+            <Logo style={{marginTop: 3, marginBottom: 3}} />
           </Col>
-          <Col span={12}>
+          <Col offset={-1} span={11}>
             <Row type="flex" justify="end">
               <Col>
-                <Menu style={{background: "transparent" }} className="menu" mode="horizontal">
+                <Menu style={{background: "transparent", marginTop: 3, marginBottom: 3}} className="menu" mode="horizontal">
                   <Menu.Item>
                     Home
-                  </Menu.Item>
-                  <Menu.Item>
-                    About
                   </Menu.Item>
                   <Menu.Item>
                     Contact
