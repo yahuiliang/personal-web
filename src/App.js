@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import HelloMsg from './components/HelloMsg/HelloMsg.jsx';
+import NavBar from './components/NavBar/NavBar.jsx';
 
 class App extends Component {
   constructor() {
     super();
-    this.state = { tab: "Home" }
   }
 
   render() {
     return (
       <div className="App">
-        <HelloMsg />
+        <NavBar />
       </div>
     );
   }
