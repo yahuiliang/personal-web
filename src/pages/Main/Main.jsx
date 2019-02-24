@@ -3,6 +3,7 @@ import HelloMsg from '../../components/HelloMsg/HelloMsg.jsx';
 import { Row, Col } from 'antd';
 import SkillCard from '../../components/SkillCard/SkillCard.jsx';
 import EducationCard from '../../components/EducationCard/EducationCard.jsx';
+import PersonalInfoCard from '../../components/PersonalInfoCard/PersonalInfoCard.jsx';
 
 const helloMsgStyle = {
   marginTop: "20px",
@@ -16,6 +17,9 @@ class Main extends Component {
           <Col span={12}>
             <HelloMsg style={helloMsgStyle} />
           </Col>
+        </Row>
+        <Row>
+          <PersonalInfoCard />
         </Row>
         <Row>
           <Col>

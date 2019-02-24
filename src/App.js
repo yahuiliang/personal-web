@@ -24,9 +24,11 @@ class App extends Component {
           <Main></Main>
         </div>
 
-        <Affix offsetBottom={10}>
-          <Footer />
-        </Affix>
+        <div>
+          <Affix offsetBottom={10}>
+            <Footer />
+          </Affix>
+        </div>
       </div>
     );
   }
