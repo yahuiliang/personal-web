@@ -1,41 +1,81 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, Icon } from 'antd';
+import { Collapse } from 'antd';
+import SkillIcon from './SkillIcon/SkillIcon.jsx';
+
+const Panel = Collapse.Panel;
 
 const gridStyle = {
   textAlign: 'center',
+  height: 200
 };
 
 class SkillCard extends Component {
   render() {
+    // console.log(Test)
     return (
       <div>
-        <Card title="Skills" style={{ background: "transparent" }}>
-          <Row>
-            <Col>
-              <Card.Grid style={gridStyle}>
-                C++
-              </Card.Grid>
-            </Col>
-            <Col>
-              <Card.Grid style={gridStyle}>
-                Java
-              </Card.Grid>
-            </Col>
-            <Col>
-              <Card.Grid style={gridStyle}>Python</Card.Grid>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Card.Grid style={gridStyle}>HTML5</Card.Grid>
-            </Col>
-            <Col>
-              <Card.Grid style={gridStyle}>CSS3</Card.Grid>
-            </Col>
-            <Col>
-              <Card.Grid style={gridStyle}>JavaScript</Card.Grid>
-            </Col>
-          </Row>
+        <Card title="Skills">
+          <Collapse accordion defaultActiveKey={['1']}>
+            <Panel header="Computer Languages" key="1">
+              <Row>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    <SkillIcon src={require("../../assets/c++.svg")} skillName="C++" />
+                  </Card.Grid>
+                </Col>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    <SkillIcon src={require("../../assets/java.svg")} skillName="Java" />
+                  </Card.Grid>
+                </Col>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    <SkillIcon src={require("../../assets/python.svg")} skillName="Python" />
+                  </Card.Grid>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    <SkillIcon src={require("../../assets/html.svg")} skillName="HTML5" />
+                  </Card.Grid>
+                </Col>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    <SkillIcon src={require("../../assets/css.svg")} skillName="CSS3" />
+                  </Card.Grid>
+                </Col>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    <SkillIcon src={require("../../assets/javascript.svg")} skillName="JavaScript" />
+                  </Card.Grid>
+                </Col>
+              </Row>
+            </Panel>
+            <Panel header="Frameworks" key="2">
+              <Row>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    Coming Soon!
+                  </Card.Grid>
+                </Col>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    Coming Soon!
+                  </Card.Grid>
+                </Col>
+                <Col>
+                  <Card.Grid style={gridStyle}>
+                    Coming Soon!
+                  </Card.Grid>
+                </Col>
+              </Row>
+            </Panel>
+            <Panel header="Databases" key="3">
+              <p>Coming Soon</p>
+            </Panel>
+          </Collapse>
         </Card>
       </div>
     );
