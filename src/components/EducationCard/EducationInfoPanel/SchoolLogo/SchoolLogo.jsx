@@ -7,7 +7,7 @@ class SchoolLogo extends Component {
       <div>
         <Row type="flex" justify="center">
           <Col>
-            <img style={{ width: 100 }} src={require('../../../assets/msoe (high-resolution).png')} alt="MSOE"></img>
+            <img style={{ width: 100 }} src={require('../../../../assets/msoe (high-resolution).png')} alt="MSOE"></img>
           </Col>
         </Row>
         <Row type="flex" justify="center">

@@ -53,7 +53,7 @@ class SkillCard extends Component {
               </Row>
             </Panel>
             <Panel header="Frameworks" key="2">
-              <Row>
+              {/* <Row>
                 <Col>
                   <Card.Grid style={gridStyle}>
                     TensorFlow
@@ -69,10 +69,11 @@ class SkillCard extends Component {
                     Jersey
                   </Card.Grid>
                 </Col>
-              </Row>
+              </Row> */}
+              <p>Coming Soon!</p>
             </Panel>
             <Panel header="Databases" key="3">
-              <p>Coming Soon</p>
+              <p>Coming Soon!</p>
             </Panel>
           </Collapse>
         </Card>

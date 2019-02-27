@@ -13,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" ref={(node) => { this.container = node; }}>
+      <div className="App" style={{maxWidth: 1000, marginLeft: "auto", marginRight: "auto"}}>
         <div style={{ height: 60 }}>
           <Affix offsetTop={0}>
             <NavBar />

@@ -13,14 +13,18 @@ class Footer extends Component {
                 <Col span={6}>
                   <Row type="flex" justify="center">
                     <Col>
-                      <Button shape="circle" size={"large"} icon="linkedin" />
+                      <a href="https://www.linkedin.com/in/yahui-liang/">
+                        <Button shape="circle" size={"large"} icon="linkedin" />
+                      </a>
                     </Col>
                   </Row>
                 </Col>
                 <Col span={6}>
                   <Row type="flex" justify="center">
                     <Col>
-                      <Button shape="circle" size={"large"} icon="github" />
+                      <a href="https://github.com/yahuiliang">
+                        <Button shape="circle" size={"large"} icon="github" />
+                      </a>
                     </Col>
                   </Row>
                 </Col>

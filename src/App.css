@@ -1,4 +1,5 @@
 .App  {
     font-family: 'Gloria Hallelujah', cursive;
     background-color: whitesmoke;
+    border: solid lightgray 2px;
 }
