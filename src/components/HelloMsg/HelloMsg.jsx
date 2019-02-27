@@ -5,7 +5,7 @@ import '../../index.css'
 class HelloMsg extends Component {
   render() {
     return (
-      <div style={{...this.props.style, width: 400}}>
+      <div style={{...this.props.style, maxWidth: 400}}>
         <Row>
           <Col>
             <h3>I am a software engineer,</h3>

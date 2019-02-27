@@ -4,12 +4,26 @@ import SchoolLogo from './SchoolLogo/SchoolLogo.jsx';
 
 const Panel = Collapse.Panel;
 
-const courses = [
+const softwareCourses = [
   'Software Development',
+  'Software Development Lab',
+  'Design Patterns',
+  'Software Verification',
+  'Web Application Design',
   'Data Structure',
   'Agile Development Process',
   'Operating System',
+  'Real-time System',
   'Algorithms',
+  'Database Design'
+];
+
+const hardwareCourses = [
+  'Digital Logic',
+  'Computer Architecture',
+  'Embedded Systems',
+  'Networking',
+  'Digital Signal Processing'
 ];
 
 class EducationCard extends Component {
@@ -73,14 +87,14 @@ class EducationCard extends Component {
                     <Panel header="Software Related" key="1">
                       <List
                         size="large"
-                        dataSource={courses}
+                        dataSource={softwareCourses}
                         renderItem={item => (<List.Item>{item}</List.Item>)}
                       />
                     </Panel>
                     <Panel header="Hardware Related" key="2">
                       <List
                         size="large"
-                        dataSource={courses}
+                        dataSource={hardwareCourses}
                         renderItem={item => (<List.Item>{item}</List.Item>)}
                       />
                     </Panel>

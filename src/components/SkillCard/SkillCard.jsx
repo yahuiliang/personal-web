@@ -7,12 +7,11 @@ const Panel = Collapse.Panel;
 
 const gridStyle = {
   textAlign: 'center',
-  height: 200
+  height: 150
 };
 
 class SkillCard extends Component {
   render() {
-    // console.log(Test)
     return (
       <div>
         <Card title="Skills">
@@ -57,17 +56,17 @@ class SkillCard extends Component {
               <Row>
                 <Col>
                   <Card.Grid style={gridStyle}>
-                    Coming Soon!
+                    TensorFlow
                   </Card.Grid>
                 </Col>
                 <Col>
                   <Card.Grid style={gridStyle}>
-                    Coming Soon!
+                    Cocoa Touch
                   </Card.Grid>
                 </Col>
                 <Col>
                   <Card.Grid style={gridStyle}>
-                    Coming Soon!
+                    Jersey
                   </Card.Grid>
                 </Col>
               </Row>
